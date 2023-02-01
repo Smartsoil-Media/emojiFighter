@@ -79,6 +79,13 @@ button {
     background: #26e2c6;
 }
 
+@media (max-width: 768px) {
+    .bet-size-btn {
+        width: 50px;
+        flex-wrap: wrap;
+    }
+}
+
 .betSize {
     margin: 5px 20px 0px 20px;
     display: flex;

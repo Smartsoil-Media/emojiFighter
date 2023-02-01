@@ -138,7 +138,22 @@ if (betAmount === 0) {
         startEl.style.display = "none";
         fundsEl.style.display = "flex";
 
-      }  else if (fighterOneNumbers < fighterTwoNumbers && emojiTwoPicked === true ) {
+      } else if (fighterOneNumbers > fighterTwoNumbers && emojiTwoPicked === true) {
+        stageEl.textContent =" Unlucky, you lost "
+        let earnings = betAmount * 2
+        let earningsReturn = funds -= earnings
+        fundsEl.textContent = "Account Funds: $" + earningsReturn
+        numbersEl.textContent = "Scores: " + fighterOneEmoji + ": " + fighterOneNumbers + " VS " + fighterTwoEmoji + ": " + fighterTwoNumbers
+        resetBtnEl.style.display = "block";
+        numbersEl.style.display = "block";
+        betAmountEl.style.display = "none";
+        betSizeEl.style.display = "none";
+        startEl.style.display = "none";
+        fundsEl.style.display = "flex";
+      } 
+      
+      
+      else if (fighterOneNumbers < fighterTwoNumbers && emojiTwoPicked === true ) {
         let earnings = betAmount * 2
         let earningsReturn = funds += earnings
         fundsEl.textContent = "Account Funds: $" + earningsReturn
@@ -166,7 +181,8 @@ if (betAmount === 0) {
 
 
       }  else {
-        stageEl.textContent = "Something went wrong "
+        stageEl.textContent = "Click    start fight"
+        numbersEl.textContent = ""
       }
 }
 }

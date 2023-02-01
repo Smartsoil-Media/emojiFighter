@@ -45,13 +45,13 @@ function updateBet20() {
 function updateBet50() {
     betAmount = 50
     betAmountEl.textContent = "Bet Amount: " + betAmount
-    numbersEl.textContent = "$" + "50 is just right"
+    numbersEl.textContent = "$" + "50 is.. ok I guess"
     startEl.style.display = "block"
 }
 function updateBet100() {
     betAmount = 100
     betAmountEl.textContent = "Bet Amount: " + betAmount
-    numbersEl.textContent = "One CATZ = one CATZ"
+    numbersEl.textContent = "$100 is a bit more like it!"
     startEl.style.display = "block"
 }
 function updateBet500() {
@@ -83,10 +83,9 @@ function generateFighters() {
 
   })
   document.getElementById("fighterTwoEmoji").addEventListener("click", function() {
-    console.log("Fighter two emoji clicked: ", fighterTwoEmoji)
     emojiTwoPicked = true 
     emojiOnePicked = false
-    numbersEl.textContent = "You picked: " +  fighterTwoEmoji 
+    stageEl.textContent = "You picked: " +  fighterTwoEmoji 
     numbersEl.textContent = "Please pick a bet amount"
     betSizeEl.style.display = "block";
     betSizeEl.style.display = "flex";

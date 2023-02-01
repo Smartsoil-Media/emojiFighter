@@ -57,7 +57,7 @@ function updateBet100() {
 function updateBet500() {
     betAmount= 500
     betAmountEl.textContent = "Bet Amount: " + betAmount
-    numbersEl.textContent = "You absoutle fucking degen"
+    numbersEl.textContent = "You absolute fucking degen"
     startEl.style.display = "block"
 }
 
@@ -138,7 +138,14 @@ if (betAmount === 0) {
         startEl.style.display = "none";
         fundsEl.style.display = "flex";
 
-      } else if (fighterOneNumbers > fighterTwoNumbers && emojiTwoPicked === true) {
+      } else if (fighterOneNumbers === fighterTwoNumbers) {
+        stageEl.textContent = "It's a tie!"
+        numbersEl.textContent = ""
+
+      } 
+      
+      
+      else if (fighterOneNumbers > fighterTwoNumbers && emojiTwoPicked === true) {
         stageEl.textContent =" Unlucky, you lost "
         let earnings = betAmount * 2
         let earningsReturn = funds -= earnings

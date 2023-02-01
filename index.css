@@ -80,11 +80,17 @@ button {
 }
 
 @media (max-width: 768px) {
-    .bet-size-btn {
-        width: 50px;
+    .betSize {
         flex-wrap: wrap;
     }
 }
+
+@media (max-width: 768px) {
+    .bet-size-btn {
+        width:auto;
+    }
+}
+
 
 .betSize {
     margin: 5px 20px 0px 20px;

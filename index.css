@@ -82,6 +82,8 @@ button {
 @media (max-width: 768px) {
     .betSize {
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 }
 

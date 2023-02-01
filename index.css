@@ -28,6 +28,7 @@ h1 {
 }
 
 button {
+    touch-action: manipulation; 
     margin: 5px 20px;
     cursor: pointer;
     border: 0;
